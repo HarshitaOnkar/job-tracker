@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Design System — Verification</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="kn-app">
+    <header class="kn-topbar">
+      <div class="kn-topbar-left">Project Alpha</div>
+      <div class="kn-topbar-center">Step 2 / 5</div>
+      <div class="kn-topbar-right">
+        <span class="kn-status-badge kn-status-in-progress">In Progress</span>
+      </div>
+    </header>
+
+    <div class="kn-context-header">
+      <h1>Build Your Product</h1>
+      <p>Define the core features and wireframe the interface.</p>
+    </div>
+
+    <div class="kn-workspace">
+      <main class="kn-primary">
+        <div class="kn-card">
+          <h2>Primary Workspace</h2>
+          <p>Main content area. Background should be off-white (#F7F6F3), not pure white.</p>
+          <p>Headings use serif font. Spacing: 8, 16, 24, 40, 64px only.</p>
+          <button class="kn-btn kn-btn-primary">Primary Action</button>
+          <button class="kn-btn kn-btn-secondary">Secondary</button>
+          <input type="text" class="kn-input" placeholder="Focus me for accent ring" style="max-width: 300px; margin-top: 16px;">
+        </div>
+      </main>
+      <aside class="kn-secondary">
+        <p class="kn-step-explanation">Step explanation text. Copy the prompt below.</p>
+        <pre class="kn-prompt-box">const example = "copyable prompt";</pre>
+        <div class="kn-panel-actions">
+          <button class="kn-btn kn-btn-secondary">Copy</button>
+          <button class="kn-btn kn-btn-primary">Build</button>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="kn-proof-footer">
+      <ul class="kn-proof-checklist">
+        <li class="kn-proof-item"><input type="checkbox" class="kn-checkbox"> UI Built</li>
+        <li class="kn-proof-item"><input type="checkbox" class="kn-checkbox"> Logic Working</li>
+        <li class="kn-proof-item"><input type="checkbox" class="kn-checkbox"> Test Passed</li>
+        <li class="kn-proof-item"><input type="checkbox" class="kn-checkbox"> Deployed</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

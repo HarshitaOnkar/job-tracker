@@ -1,0 +1,128 @@
+/**
+ * Job Notification Tracker — Layout & Navigation
+ * KodNest Premium Build System
+ */
+
+.kn-topbar-relative {
+  position: relative;
+}
+
+.kn-app-layout .kn-main {
+  flex: 1;
+  padding: 0 var(--kn-space-4);
+}
+
+.kn-topbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--kn-space-3);
+  gap: var(--kn-space-2);
+}
+
+.kn-logo {
+  font-family: var(--kn-font-sans);
+  font-weight: 600;
+  font-size: var(--kn-font-size-body-sm);
+  color: var(--kn-text-primary);
+  text-decoration: none;
+}
+
+.kn-logo:hover {
+  color: var(--kn-accent);
+}
+
+.kn-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--kn-space-4);
+}
+
+.kn-nav-link {
+  font-size: var(--kn-font-size-body-sm);
+  color: var(--kn-text-muted);
+  text-decoration: none;
+  padding: var(--kn-space-1) 0;
+  border-bottom: 2px solid transparent;
+  transition: color var(--kn-transition), border-color var(--kn-transition);
+}
+
+.kn-nav-link:hover {
+  color: var(--kn-text-primary);
+}
+
+.kn-nav-link-active {
+  color: var(--kn-text-primary);
+  border-bottom-color: var(--kn-accent);
+  font-weight: 500;
+}
+
+/* Hamburger */
+.kn-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 40px;
+  height: 40px;
+  padding: var(--kn-space-1);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--kn-text-primary);
+}
+
+.kn-hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .kn-hamburger {
+    display: flex;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .kn-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--kn-space-2);
+    background: var(--kn-background);
+    border-bottom: var(--kn-border-width) solid var(--kn-border);
+    gap: 0;
+  }
+
+  .kn-nav:not(.kn-nav-open) {
+    display: none;
+  }
+
+  .kn-nav.kn-nav-open {
+    display: flex;
+  }
+
+  .kn-nav-link {
+    padding: var(--kn-space-2);
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .kn-nav-link-active {
+    border-left-color: var(--kn-accent);
+    border-bottom-color: transparent;
+  }
+}
+
+@media (min-width: 769px) {
+  .kn-nav {
+    display: flex;
+  }
+}

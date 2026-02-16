@@ -1,0 +1,21 @@
+.kn-placeholder-page {
+  padding: var(--kn-space-5) 0;
+}
+
+.kn-placeholder-page h1 {
+  font-family: var(--kn-font-serif);
+  font-size: var(--kn-font-size-headline);
+  font-weight: 400;
+  line-height: var(--kn-line-height-tight);
+  letter-spacing: var(--kn-letter-spacing-tight);
+  margin: 0 0 var(--kn-space-2);
+  max-width: var(--kn-text-max-width);
+}
+
+.kn-placeholder-page p {
+  font-size: var(--kn-font-size-body);
+  line-height: var(--kn-line-height-body);
+  color: var(--kn-text-muted);
+  margin: 0;
+  max-width: var(--kn-text-max-width);
+}
